@@ -1,0 +1,52 @@
+.header{
+        background-image: url(../img/the-urban-landscape-1698285.png);
+        background-size: cover;
+        height: 380px;
+        .header_title{
+            margin-top: 89px;
+            margin-bottom: 96px;
+        };
+        .border_select{
+            border-radius: 0.25rem;
+            border: 3px solid #fff;
+        }
+}
+//熱門景點
+.hot_Spot{
+    bottom:-20%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+//btn 
+.Lingya{background:  #8A82CC;margin-left: 51px;@include float_style;}
+.Sanmin{background:  #FFA782;@include float_style;}
+.Dashu{background:   #F5D005;@include float_style;}
+.Yancheng{background:#559AC8;@include float_style;}
+
+// Divider 虛線區
+.Divider{
+    margin-top: 100px;
+    margin-bottom: 76px;
+    border-bottom:1.5px dashed #559AC8;width:800px;
+}
+//main
+.area_Crad{
+    @include float_style;
+    .area_Card-Title{
+        bottom:10px;
+    }
+    .area_Img{
+        height: 155px;
+        @include img_cover;
+    }
+    .area_Icon{
+        height: 20px;
+    }
+}
+.btn{
+    @include pad{
+        display: block;
+        width: 80%;
+    }
+}
+

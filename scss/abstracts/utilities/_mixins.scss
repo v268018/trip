@@ -1,0 +1,38 @@
+//max-width:767px
+@mixin pad{
+    @media(max-width:768px){
+        @content
+    }
+};
+//max-width:540px
+@mixin iphone{
+    @media(max-width:576px){
+        @content
+    }
+};
+//max-width:375px
+@mixin mobile{
+    @media(max-width:375px){
+        @content
+    }
+};
+@mixin img_cover{
+    object-fit: cover;
+    object-position: center center;
+}
+//logo hide
+@mixin text_hide{
+    background-repeat:no-repeat;
+    text-indent:101%;
+    white-space:nowrap;
+    overflow:hidden;
+    display:block;
+}
+//浮動特效
+@mixin float_style{
+    cursor:pointer;
+    transition: .5s;//延遲時間 
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
